@@ -1,0 +1,10 @@
+Patient: C L
+Patient DOB: 03/17/1992
+
+S:
+Headache, "1", 1/10
+
+OAP:
+SI Joints Left 1, Anterior
+TL, Rib Curvature, Thumb
+"blahsspdmf"

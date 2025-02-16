@@ -1,0 +1,8 @@
+Patient: Cory Lampley
+Patient DOB: 03/17/1992
+
+S:
+Cory presented today with a headache described as "1", rated as 1/10.
+
+OAP:
+"1"

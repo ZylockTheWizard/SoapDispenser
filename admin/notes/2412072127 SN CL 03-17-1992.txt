@@ -1,0 +1,8 @@
+Patient: C L
+Patient DOB: 03/17/1992
+
+S:
+C presented today with a headache described as "1", rated as 1/10.
+
+OAP:
+"l"

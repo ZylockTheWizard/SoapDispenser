@@ -1,0 +1,10 @@
+Patient: Cory Lampley
+Patient DOB: 03/17/1992
+
+S:
+Headache, "holle", 1/10
+
+OAP:
+Cervical 1, Left
+TL, Spinous, BGI
+"1"

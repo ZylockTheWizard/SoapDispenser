@@ -1,0 +1,10 @@
+Patient: Cory Lampley
+Patient DOB: 03/17/1992
+
+S:
+Cory presented today with a headache described as "holle", rated as 1/10.
+
+O: Therapy Localization indicated neurological disruption in the cervical spine
+A: Findings indicated leftward subluxation of the C1 vertebra
+P: The C1 vertebra was addressed utilizing BGI contact and breathing techniques contacting the spinous process
+Details: "1"

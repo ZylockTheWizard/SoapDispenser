@@ -1,0 +1,413 @@
+<div class="Page" id="OAPPage">
+    <div class="PageForm">
+        <h2>Post-Adjustment Note <span id="OAPNumber"></span></h2>
+        <div class="form-group">
+            <select class="form-control Required" id="GeneralLocationSelect">
+                <option disabled selected value="">General location</option>
+                <option show="OAPSpine">Spine</option>
+                <option show="OAPExtremity">Extremity</option>
+                <option show="OAPMuscle">Muscle</option>
+                <option show="OAPPosterior">Posterior Non-Spine</option>
+                <option show="OAPOther">Other</option>
+            </select>
+        </div>
+        <div id="OAPSpine" class="OAPGroup Hidden">
+            <div class="form-group">
+                <select class="form-control Required OAPSpecific">
+                    <option disabled selected value="">Specific location</option>
+                    <option text="the cervical spine" text2="the C[Segment] vertebra">Cervical</option>
+                    <option text="the thoracic spine" text2="the T[Segment] vertebra">Thoracic</option>
+                    <option text="the lumbar spine" text2="the L[Segment] vertebra">Lumbar</option>
+                    <option text="the sacrum" text2="the sacrum at S[Segment]">Sacrum</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSpecificOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    type="number"
+                    class="form-control Required OAPSegment"
+                    placeholder="Segment (1 to 12)"
+                    min="1"
+                    max="12"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPListing">
+                    <option disabled selected value="">Listing</option>
+                    <option text="leftward subluxation of">Left</option>
+                    <option text="rightward subluxation of">Right</option>
+                    <option text="posterior subluxation of">Posterior</option>
+                    <option text="disconnection near">Disconnection</option>
+                    <option text="neurological evidence of prior injury">Injury</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPListingOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPAnalysis">
+                    <option disabled selected value="">Analysis</option>
+                    <option text="Therapy Localization indicated neurological disruption in">TL</option>
+                    <option text="Motion Palpation indicated imbalanced musculature and aberrant motion of">MoPal</option>
+                    <option text="Muscle challenge weaknesses indicated neurological disruption in">Challenge</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPAnalysisOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPSCP">
+                    <option disabled selected value="">SCP</option>
+                    <option text="the spinous process">Spinous</option>
+                    <option text="the vertebral body">Body</option>
+                    <option text="the transverse process">TP</option>
+                    <option text="the lateral mass">Lat Mass</option>
+                    <option text="the sacral tubercle">Sacral Tubercle</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPPlan">
+                    <option disabled selected value="">Plan</option>
+                    <option text="the J-Tech Chiropractic Adjusting Tool">CAT</option>
+                    <option text="the doctor’s pisiform">Pisiform</option>
+                    <option text="the doctor’s thenar">Thenar</option>
+                    <option text="Toggle Recoil Technique">Toggle</option>
+                    <option text="BGI contact and breathing techniques">BGI</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPPlanOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPDetails"
+                    placeholder="Details"
+                />
+            </div>
+        </div>
+        <div id="OAPExtremity" class="OAPGroup Hidden">
+            <div class="form-group">
+                <select class="form-control Required OAPSpecific">
+                    <option disabled selected value="">Specific location</option>
+                    <option>Upper X</option>
+                    <option>Lower X</option>
+                    <option>Cranial</option>
+                    <option>Pelvis</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSpecificOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPSide">
+                    <option disabled selected value="">Side</option>
+                    <option text="left">Left</option>
+                    <option text="right">Right</option>
+                    <option>N/A</option>
+                </select>
+            </div>            
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSegment"
+                    placeholder="Segment"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPListing">
+                    <option disabled selected value="">Listing</option>
+                    <option text="anterior subluxation">Anterior</option>
+                    <option text="posterior subluxation">Posterior</option>
+                    <option text="medial subluxation">Medial</option>
+                    <option text="lateral subluxation">Lateral</option>
+                    <option text="proximal subluxation">Proximal</option>
+                    <option text="distal subluxation">Distal</option>
+                    <option text="neurological evidence of prior injury">Injury</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPListingOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPAnalysis">
+                    <option disabled selected value="">Analysis</option>
+                    <option text="Therapy Localization indicated neurological disruption in">TL</option>
+                    <option text="Motion Palpation indicated imbalanced musculature and aberrant motion of">MoPal</option>
+                    <option text="Muscle challenge weaknesses indicated neurological disruption in">Challenge</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPAnalysisOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSCP"
+                    placeholder="SCP"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPPlan">
+                    <option disabled selected value="">Plan</option>
+                    <option text="the J-Tech Chiropractic Adjusting Tool">CAT</option>
+                    <option text="the doctor’s pisiform">Pisiform</option>
+                    <option text="the doctor’s thenar">Thenar</option>
+                    <option text="Toggle Recoil Technique">Toggle</option>
+                    <option text="long axis distraction">Distraction</option>
+                    <option text="the doctor’s thumb">Thumb</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPPlanOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPDetails"
+                    placeholder="Details"
+                />
+            </div>
+        </div>
+        <div id="OAPMuscle" class="OAPGroup Hidden">
+            <div class="form-group">
+                <select class="form-control Required OAPSide">
+                    <option disabled selected value="">Side</option>
+                    <option text="left">Left</option>
+                    <option text="right">Right</option>
+                    <option text="bilateral">Bilateral</option>
+                    <option>N/A</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSegment"
+                    placeholder="Segment"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPListing">
+                    <option disabled selected value="">Listing</option>
+                    <option text="spasm">Spasm</option>
+                    <option text="contracture">Contracture</option>
+                    <option text="flaccidity">Flaccid</option>
+                    <option text="neurological evidence of prior injury">Injury</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPListingOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPAnalysis">
+                    <option disabled selected value="">Analysis</option>
+                    <option text="Therapy Localization indicated neurological disruption in">TL</option>
+                    <option text="Motion Palpation indicated imbalanced musculature and aberrant motion of">MoPal</option>
+                    <option text="Muscle challenge weaknesses indicated neurological disruption in">Challenge</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPAnalysisOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSCP"
+                    placeholder="SCP"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPPlan">
+                    <option disabled selected value="">Plan</option>
+                    <option text="the J-Tech Chiropractic Adjusting Tool">CAT</option>
+                    <option text="the doctor’s pisiform">Pisiform</option>
+                    <option text="the doctor’s thumb">Thumb</option>
+                    <option text="the doctor’s elbow">Elbow</option>
+                    <option text="light traction">Traction</option>
+                    <option text="Injury Recall Technique">IRT</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPPlanOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPDetails"
+                    placeholder="Details"
+                />
+            </div>
+        </div>
+        <div id="OAPPosterior" class="OAPGroup Hidden">
+            <div class="form-group">
+                <select class="form-control Required OAPSpecific">
+                    <option disabled selected value="">Specific location</option>
+                    <option text="in the SI joint">SI Joints</option>
+                    <option text="at the scapula">Scapula</option>
+                    <option text="of the rib">Rib</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSpecificOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPSide">
+                    <option disabled selected value="">Side</option>
+                    <option text="left">Left</option>
+                    <option text="right">Right</option>
+                    <option text="bilateral">Bilateral</option>
+                    <option>N/A</option>
+                </select>
+            </div>   
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPSegment"
+                    placeholder="Segment"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPListing">
+                    <option disabled selected value="">Listing</option>
+                    <option text="anterior subluxation">Anterior</option>
+                    <option text="posterior subluxation">Posterior</option>
+                    <option text="medial subluxation">Medial</option>
+                    <option text="lateral subluxation">Lateral</option>
+                    <option text="superior subluxation">Superior</option>
+                    <option text="inferior subluxation">Inferior</option>
+                    <option text="neurological evidence of prior injury">Injury</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPListingOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPAnalysis">
+                    <option disabled selected value="">Analysis</option>
+                    <option text="Therapy Localization indicated neurological disruption in">TL</option>
+                    <option text="Motion Palpation indicated imbalanced musculature and aberrant motion of">MoPal</option>
+                    <option text="Muscle challenge weaknesses indicated neurological disruption in">Challenge</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPAnalysisOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPSCP">
+                    <option disabled selected value="">SCP</option>
+                    <option text="the PSIS">PSIS</option>
+                    <option text="the ischial tubercle">Ischial Tubercle</option>
+                    <option text="the scapula">Scapula</option>
+                    <option text="the rib scphead">Rib Head</option>
+                    <option text="the rib curvature">Rib Curvature</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control Required OAPPlan">
+                    <option disabled selected value="">Plan</option>
+                    <option text="the J-Tech Chiropractic Adjusting Tool">CAT</option>
+                    <option text="the doctor’s pisiform">Pisiform</option>
+                    <option text="the doctor’s thenar">Thenar</option>
+                    <option text="Toggle Recoil Technique">Toggle</option>
+                    <option text="long axis distraction">Distraction</option>
+                    <option text="the doctor’s thumb">Thumb</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPPlanOther Hidden"
+                    placeholder="Other"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPDetails"
+                    placeholder="Details"
+                />
+            </div>
+        </div>
+        <div id="OAPOther" class="OAPGroup Hidden">
+            <div class="form-group">
+                <input
+                    class="form-control Required OAPDetails"
+                    placeholder="Details"
+                />
+            </div>
+        </div>
+        <div class="form-group">
+            <button 
+                class="btn btn-primary btn-block PageButton" 
+                id="OAPSubmit"
+            >
+                Submit
+            </button>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="OAPMoreModel" data-bs-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">More?</h5>
+            </div>
+            <div class="modal-body">
+              <p>Click the plus (<b>+</b>) to add another area of adjustment, <br> or <b>Done</b> to finish.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" id="OAPAddMoreButton">+</button>
+              <button type="button" class="btn btn-primary" id="OAPDoneButton">Done</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

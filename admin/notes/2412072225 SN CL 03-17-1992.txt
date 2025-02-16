@@ -1,0 +1,10 @@
+Patient: C L
+Patient DOB: 03/17/1992
+
+S:
+C presented today with a headache described as "1", rated as 1/10.
+
+O: Therapy Localization indicated neurological disruption in the left 1
+A: Findings indicated anterior subluxation of the left 1
+P: The left 1 was addressed utilizing the doctor’s thumb contacting the the rib curvature
+Details: "blahsspdmf"

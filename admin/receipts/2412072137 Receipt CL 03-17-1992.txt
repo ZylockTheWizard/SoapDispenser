@@ -1,0 +1,6 @@
+Appointment  $1.99
+Spine       $25.60
+------------------
+Total       $27.59
+
+Hello world

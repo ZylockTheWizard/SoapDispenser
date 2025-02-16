@@ -1,0 +1,169 @@
+<div class="Page" id="SubjectivePage">
+    <div class="PageForm">
+        <h2>Subjective <span id="SubjectiveNumber"></span></h2>
+        <div class="form-group">
+            <select class="form-control Required" id="LocationSelect" depth="1">
+                <option disabled selected value="">General location of complaint</option>
+                <option show="HeadSelect">Head and Neck</option>
+                <option show="TorsoSelect">Torso</option>
+                <option show="UpperExtremitySelect">Upper Extremity (Shoulder, Arm, Hand)</option>
+                <option show="LowerExtremitySelect">Lower Extremity (Hip, Knee, Foot)</option>
+                <option show="SystemicSelect">Systemic or Widespread</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden SpecificLocationSelect Required" id="HeadSelect" depth="2">
+                <option disabled selected value="">Specific location of complaint</option>
+                <option text="a headache">Headache</option>
+                <option text="vertigo">Dizziness/Vertigo</option>
+                <option text="jaw">Jaw</option>
+                <option text="neck">Neck</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden SpecificLocationSelect Required" id="TorsoSelect" depth="2">
+                <option disabled selected value="">Specific location of complaint</option>
+                <option text="upper back">Upper Back</option>
+                <option text="mid back">Mid Back</option>
+                <option text="low back"> Low Back</option>
+                <option text="pelvis">Pelvis</option>
+                <option text="sternum near the attachments of the ribs">Ribs at the Breastbone</option>
+                <option text="shoulder blade near the attachments of the ribs">Ribs by the Shoulder Blades</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden SpecificLocationSelect Required" id="UpperExtremitySelect" depth="2">
+                <option disabled selected value="">Specific location of complaint</option>
+                <option text="shoulder">Shoulder</option>
+                <option text="upper arm">Upper Arm</option>
+                <option text="elbow">Elbow</option>
+                <option text="forearm">Forearm</option>
+                <option text="wrist">Wrist</option>
+                <option text="hand">Hand</option>
+                <option text="fingers">Fingers</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden SpecificLocationSelect Required" id="LowerExtremitySelect" depth="2">
+                <option disabled selected value="">Specific location of complaint</option>
+                <option text="hip">Hip</option>
+                <option text="thigh">Thigh</option>
+                <option text="hip and thigh area">Hip and Thigh</option>
+                <option text="knee">Knee</option>
+                <option text="shin and calf area">Shin and/or Calf</option>
+                <option text="ankle and heel area">Ankle and/or Heel</option>
+                <option text="foot">Foot</option>
+                <option text="toes">Toes</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden SpecificLocationSelect Required" id="SystemicSelect" depth="2">
+                <option disabled selected value="">Specifics</option>
+                <option text="widespread ache">Widespread Ache</option>
+                <option text="general weakness">General Weakness</option>
+                <option text="high blood pressure">High Blood Pressure</option>
+                <option value="Other">Internal Organs</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input 
+                class="form-control Hidden Required"
+                placeholder="Please explain"
+                speech="please explain"
+                id="OtherLocationInput"
+                depth="3"
+            />
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden Required" id="SideSelect" depth="3">
+                <option disabled selected value="">Side of body</option>
+                <option text="on the left side">Left</option>
+                <option text="on the right side">Right</option>
+                <option text="on both sides">Both Sides (Bilateral)</option>
+                <option text="at the midline">Central (Medial)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden Required" id="ExtremitySideSelect" depth="3">
+                <option disabled selected value="">Side of body</option>
+                <option text="left">Left</option>
+                <option text="right">Right</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control Hidden Required" id="QualitySelect" depth="3">
+                <option disabled selected value="">Quality</option>
+                <option text="soreness and aching">Pain: Sore/Ache</option>
+                <option text="dull pain">Pain: Dull</option>
+                <option text="sharp pain">Pain: Sharp</option>
+                <option text="burning pain">Pain: Burning</option>
+                <option text="tenderness">Tender</option>
+                <option text="tightness">Tight</option>
+                <option text="tingling">Tingling</option>
+                <option text="restricted movement">Not moving well</option>
+                <option text="clicking / grinding">Clicking or Grinding</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input 
+                class="form-control Hidden Required"
+                placeholder="Please explain"
+                speech="please explain"
+                id="OtherQualityInput"
+                depth="4"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="number"
+                class="form-control Hidden"
+                placeholder="Severity (1 to 10)"
+                speech="On a scale from 1 to 10 please enter the severity of complaint"
+                id="SeverityInput"
+                min="1"
+                max="10"
+                depth="3"
+            />
+        </div>
+        <div class="form-group">
+            <input 
+                class="form-control Hidden"
+                placeholder="Details (Optional)"
+                speech="please explain"
+                id="OtherSeverity"
+                depth="3"
+            />
+        </div>
+        <div class="form-group">
+            <button 
+                class="btn btn-primary btn-block PageButton" 
+                speech="Press enter to submit"
+                id="SubjectiveSubmitButton"
+            >
+                Submit
+            </button>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="MoreModel" data-bs-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">More?</h5>
+            </div>
+            <div class="modal-body">
+              <p>Click the plus (<b>+</b>) to add another area of complaint, <br> or <b>Done</b> to finish.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" id="AddMoreButton">+</button>
+              <button type="button" class="btn btn-primary" id="DoneButton">Done</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

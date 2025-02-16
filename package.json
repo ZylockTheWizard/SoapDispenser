@@ -1,0 +1,22 @@
+{
+  "main": "dist/BackEnd/Server.js",
+  "scripts": {
+    "start": "tsc && electron . dev",
+    "dist": "tsc && del node_modules\\electron\\dist\\resources\\app.asar && asar pack . node_modules/electron/dist/resources/app.asar",
+    "prod": "npm run dist && node_modules\\electron\\dist\\electron.exe"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "@types/inputmask": "^5.0.7",
+    "@types/jquery": "^3.5.16",
+    "electron": "^22.3.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "asar": "^3.2.0",
+    "bootstrap": "^5.3.0-alpha3",
+    "inputmask": "^5.0.8",
+    "jquery": "^3.6.4",
+    "moment": "^2.30.1"
+  }
+}
