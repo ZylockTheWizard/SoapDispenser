@@ -1,4 +1,21 @@
 [
-    {"name": "Appointment", "price": "1.99"},
-    {"name": "Spine", "price": "25.60"}
+	{"name": "Appointment", "price": "10.00"},
+	{"name": "Exam", "price": "35.00"},
+	{"name": "Spine", "price": "25.00"},
+	{"name": "Spine (Single Region)", "price": "15.00"},
+	{"name": "Posterior Ribs", "price": "5.00"},
+	{"name": "Muscles of the Posterior Torso", "price": "10.00"},
+	{"name": "Anterior Ribs", "price": "5.00"},
+	{"name": "Muscles of the Anterior Torso", "price": "5.00"},
+	{"name": "Full Upper Extremity", "price": "10.00"},
+	{"name": "Full Shoulder", "price": "10.00"},
+	{"name": "Full Lower Extremity", "price": "10.00"},
+	{"name": "TMJ / Other Cranial", "price": "5.00"},
+	{"name": "NLP", "price": "10.00"},
+	{"name": "IRT", "price": "10.00"},
+	{"name": "NET", "price": "30.00"},
+	{"name": "BGI Tract", "price": "10.00"},
+	{"name": "Posterior Disconnections", "price": "5.00"},
+	{"name": "Travel: 0.5 hr", "price": "50.00"},
+	{"name": "Travel: 1 hr", "price": "100.00"}
 ]
